@@ -1,4 +1,4 @@
-import { FaMicrophone, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaMicrophone, FaGithub, FaLinkedin, FaPhone, FaWhatsapp, FaTelegram } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -22,23 +22,70 @@ const Footer = () => {
               <li>Hotel Booking</li>
               <li>Restaurants</li>
               <li>Property</li>
+              <li>Customer Support</li>
               <li>Business Solutions</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <FaGithub className="text-2xl" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <FaLinkedin className="text-2xl" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <FaEnvelope className="text-2xl" />
-              </a>
-            </div>
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <ul className="space-y-3 text-gray-400">
+              <li>
+                <a 
+                  href="tel:+917355635544" 
+                  className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaPhone className="text-lg" />
+                  <span>+91 7355635544</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://wa.me/917355635544" 
+                  className="flex items-center space-x-2 hover:text-green-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp className="text-lg" />
+                  <span>WhatsApp</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://t.me/Bhuvin_Singla" 
+                  className="flex items-center space-x-2 hover:text-blue-400 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTelegram className="text-lg" />
+                  <span>@Bhuvin_Singla</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://github.com/bhuvinsingla" 
+                  className="flex items-center space-x-2 hover:text-gray-300 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub className="text-lg" />
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.linkedin.com/in/bhuvin-singla" 
+                  className="flex items-center space-x-2 hover:text-blue-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="text-lg" />
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
